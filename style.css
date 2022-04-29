@@ -1,0 +1,162 @@
+html,
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+*{
+    box-sizing: border-box;
+    font-size: 1.03em;
+}
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	background: #f5f1f6;
+}
+
+.container .left {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container .left > * {
+	margin-left: 50%;
+	font-size: 38px;
+}
+
+.logo {
+	margin-bottom: 25px;
+}
+
+.logo .image {
+	background-image: url("./images/logo.png");
+	background-position: center;
+	background-size: contain;
+	height: 150px;
+	width: 150px;
+}
+
+.container .right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container .right .box {
+	background: #fff;
+	padding: 25px;
+	box-shadow: 0px 0px 10px 0px #888888;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+
+.box input {
+	height: 50px;
+	padding: 0px 15px;
+	width: 100%;
+}
+
+.box > * {
+	margin-top: 15px;
+}
+
+.box hr{
+    width: 75%;
+}
+
+.btn {
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	border-radius: 5px;
+    cursor: pointer;
+}
+
+.text-purple{
+    color: #6d11cf;
+}
+
+.login {
+	background: #8818ff;
+    border: 2px solid #8818ff;
+    transition-duration: 0.1s;
+}
+.login:hover {
+	background: #6d11cf;
+}
+
+.create_acc {
+	background: #42b72a;
+	padding: 10px 15px;
+	width: 50%;
+}
+
+.create_acc:hover {
+	background: #31991d;
+    transition-duration: 0.1s;
+}
+
+.failed_login {
+	color: red;
+	margin-top: 5px;
+}
+
+.note_create_acc {
+	text-align: center;
+	width: 100%;
+}
+
+@media only screen and (max-width: 1110px) {
+	.container {
+		flex-direction: column;
+	}
+
+    .container .left {
+        flex: 0.5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .left > * {
+        margin-left: 0px;
+        font-size: 38px;
+    }
+
+    .container .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+}
+
+.txtregister{
+    font-weight: bold;
+    text-align: center;
+}
+
+.group .txt_input{
+    margin-bottom: 12px;
+}
+
+.right .row{
+    display: flex;
+}
+
+.right .row .group:first-child{
+    margin-right: 20px;
+}
+
+.bottom-center{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
