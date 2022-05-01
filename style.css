@@ -147,6 +147,17 @@ body {
     margin-bottom: 12px;
 }
 
+.group .input_gender select{
+	height: 50px;
+	padding: 0px 15px;
+	width: 100%;
+}
+
+.group .input_gender{
+	flex: 1;
+}
+
+
 .right .row{
     display: flex;
 }
