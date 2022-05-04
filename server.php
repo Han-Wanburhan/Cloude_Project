@@ -3,7 +3,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "logindb";
+    $dbname = "cloud_project";
 
     // Create Connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);

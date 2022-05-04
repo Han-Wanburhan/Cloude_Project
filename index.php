@@ -39,7 +39,7 @@
             <?php endif ?>
             <!-- logod in user information-->
             <?php if (isset($_SESSION['username'])): ?>
-                <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+                <p>Welcome <strong><?php echo $_SESSION['user_id']." - ".$_SESSION['username']; ?></strong></p>
                 <p><a href = "index.php?logout='1'" style = "color: red;">Loguot</a></p>
             <?php endif ?>
         </div>

@@ -22,17 +22,19 @@
             $result = mysqli_query($conn, $query);
 
             if (mysqli_num_rows($result) == 1) {
+                $row = $result->fetch_assoc();
+                $_SESSION['user_id'] = $row["id"];
                 $_SESSION['username'] = $username;
                 $_SESSION['success'] = "Your are now logged in";
                 header("location: index.php");
             } else {
-                array_push($errors, "Wrong Username or Password");
-                $_SESSION['error'] = "Wrong Username or Password!";
+                array_push($errors, "The password that you've entered is incorect");
+                $_SESSION['error'] = "The password that you've entered is incorect";
                 header("location: login.php");
             }
         } else {
-            array_push($errors, "Username & Password is required");
-            $_SESSION['error'] = "Username & Password is required";
+            array_push($errors, "The password that you've entered is incorect");
+            $_SESSION['error'] = "The password that you've entered is incorect";
             header("location: login.php");
         }
     }
