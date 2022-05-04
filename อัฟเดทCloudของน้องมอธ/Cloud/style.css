@@ -1,0 +1,532 @@
+html,
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+* {
+	box-sizing: border-box;
+	font-size: 1.03em;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	background: #f5f1f6;
+}
+
+.container .left {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container .left > * {
+	margin-left: 50%;
+	font-size: 38px;
+}
+
+.logo {
+	margin-bottom: 25px;
+}
+
+.logo .image {
+	background-image: url("./images/logo.png");
+	background-position: center;
+	background-size: contain;
+	height: 150px;
+	width: 150px;
+}
+
+.container .right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container .right .box {
+	background: #fff;
+	padding: 25px;
+	box-shadow: 0px 0px 10px 0px #888888;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+
+.box input {
+	height: 50px;
+	padding: 0px 15px;
+	width: 100%;
+}
+
+.box > * {
+	margin-top: 15px;
+}
+
+.box hr {
+	width: 75%;
+}
+
+.btn {
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.text-purple {
+	color: #6d11cf;
+}
+
+.login {
+	background: #8818ff;
+	border: 2px solid #8818ff;
+	transition-duration: 0.1s;
+}
+.login:hover {
+	background: #6d11cf;
+}
+
+.create_acc {
+	background: #42b72a;
+	padding: 10px 15px;
+	width: 50%;
+}
+
+.create_acc:hover {
+	background: #31991d;
+	transition-duration: 0.1s;
+}
+
+.failed_login {
+	color: red;
+	margin-top: 5px;
+}
+
+.note_create_acc {
+	text-align: center;
+	width: 100%;
+}
+
+@media only screen and (max-width: 1110px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.container .left {
+		flex: 0.5;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.container .left > * {
+		margin-left: 0px;
+		font-size: 38px;
+	}
+
+	.container .right {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+}
+
+.txtregister {
+	font-weight: bold;
+	text-align: center;
+}
+
+.group .txt_input {
+	margin-bottom: 12px;
+}
+
+.right .row {
+	display: flex;
+}
+
+.right .row .group:first-child {
+	margin-right: 20px;
+}
+
+.bottom-center {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.header {
+	width: 100vw;
+	background: rgb(211, 211, 211);
+	margin: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.719);
+}
+
+.btnIcon {
+	cursor: pointer;
+	margin-right: 45px;
+	font-size: 1.5em;
+}
+.header .logo {
+	background-image: url("./images/logo.png");
+	background-position: center;
+	background-size: contain;
+
+	height: 80px;
+	width: 80px;
+
+	margin: 0px !important;
+}
+
+.header .left .Title {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-left: 25px;
+}
+
+.header .left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-left: 64px;
+}
+.header .right {
+	display: flex;
+}
+
+.postbox {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.719);
+	width: 50%;
+
+	padding: 15px;
+
+	background-color: #f5f5f5;
+}
+
+.postbox .top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.postbox .top .right {
+	display: flex;
+	align-items: center;
+}
+
+.postbox .top .right .showlike {
+	margin-right: 10px;
+}
+
+.postbox .top .left {
+	display: flex;
+}
+
+.postbox .top .left .username {
+	display: flex;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 5px;
+}
+
+.postbox .top .left .profileimg {
+	background-image: url("./images/profile/profile_test.jpg");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+}
+
+.postbox .imgpost {
+	height: 500px;
+
+	background-image: url("./images/post/test_post.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	margin: 15px 0px;
+}
+
+.postbox .left {
+	display: flex;
+}
+
+.postbox .posttime {
+	text-align: left;
+	margin-top: 5px;
+	font-size: 0.9em;
+	color: #acacac;
+}
+
+.postbox .top .left > * {
+	margin-left: 25px;
+}
+
+.postbox .bottom {
+	display: flex;
+	flex-direction: column;
+}
+
+.postbox .bottom .top {
+	justify-content: end;
+	font-size: 1.8em;
+}
+
+.postbox .bottom .top > *:first-child {
+	margin-right: 25px;
+}
+
+.postbox .bottom .bottom {
+	text-align: left;
+	margin-top: 10px;
+}
+
+.postbox .bottom .left {
+	flex: 1;
+}
+.postbox .bottom .right {
+	flex: 1;
+}
+
+.post,
+.donatepopup,
+.like {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.719);
+	width: 50%;
+	max-width: 750px;
+	min-width: 600px;
+}
+
+.like {
+	max-width: 650px;
+	min-width: 500px;
+}
+
+.post .top,
+.donatepopup .top,
+.like .top {
+	display: flex;
+	position: relative;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+
+	border-bottom: 1px solid rgba(114, 114, 114, 0.699);
+}
+
+.like .top {
+	justify-content: left;
+	padding-left: 25px;
+}
+
+.post .bottom {
+	padding: 25px;
+	padding-top: 0px;
+}
+
+.post .top .close,
+.donatepopup .top .close,
+.like .top .close{
+	position: absolute;
+	right: 0;
+	margin-right: 15px;
+}
+
+.post .userimg {
+	background-image: url("./images/profile/profile_test.jpg");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	margin-right: 25px;
+}
+
+.post .username {
+	font-size: 24px;
+}
+
+.post .bottom .box {
+	display: flex;
+	align-items: center;
+}
+
+.post .txt_Upload {
+	font-size: 24px;
+}
+
+.post .description {
+	width: 100%;
+}
+
+.post .description textarea {
+	width: 100%;
+	height: 100px;
+	border: 1px solid rgba(114, 114, 114, 0.699);
+	padding: 15px;
+}
+
+.post .postBTN {
+	background: #6d11cf;
+	color: white;
+	width: 250px;
+	margin-top: 15px;
+}
+
+.post .uploadBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 300px;
+	border: 1px solid rgba(114, 114, 114, 0.699);
+	border-bottom: 0px;
+	margin-top: 20px;
+}
+
+.post .btn-upload-img {
+	font-size: 10em;
+	color: #6d11cf;
+}
+
+.donatepopup .bottom {
+	padding: 30px;
+	padding-top: 0px;
+}
+
+.donatepopup .qrcode {
+	background-image: url("./images/donate/donate_test.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+.donatepopup .padding-img {
+	padding: 50px;
+	border: 1px solid #acacac;
+}
+
+.donatepopup .details {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+
+.like .top {
+	display: flex;
+}
+.like .bottom .boxlike {
+	display: flex;
+}
+
+.profile-user {
+	background-image: url("./images/profile/profile_test.jpg");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	margin-right: 25px;
+}
+
+.like .username {
+	font-size: 24px;
+}
+
+.like .bottom .box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.like .bottom {
+	padding: 25px;
+	padding-top: 0px;
+}
+
+.like .inside-box {
+	display: flex;
+	align-items: center;
+}
+
+.like .box .heart {
+	font-size: 1.6em;
+}
+
+.postviewer{
+	display: flex;
+	height: 100%;
+	width: 100vw;
+}
+
+.postviewer .behind-box{
+	background: #f3f3f3;
+	padding: 10px;
+	width: 100%;
+}
+
+.postviewer .image_post {
+	height: 100px;
+	width: 100px;
+
+	background-image: url("./images/post/test_post.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	margin: 15px 0px;
+}
+
+.postviewer .close{
+	font-size: 2em;
+}
+
+.postviewer .topleft{
+	display: flex;
+}
+
+.postviewer .left{
+	display: flex;
+	flex: 1
+}
+
+.postviewer .right{
+	display: flex;
+	flex: 1
+}
+
+
+.postviewer .right .top .box{
+	display: flex;
+	align-items: center;
+}
+
+.postviewer .right .topleft .right{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.postviewer .right .topright{
+	display: flex;
+}
