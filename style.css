@@ -414,7 +414,7 @@ body {
 }
 
 .donatepopup .qrcode {
-	background-image: url("./images/donate/donate_test.png");
+	/* background-image: url("./images/donate/donate_test.png"); */
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
